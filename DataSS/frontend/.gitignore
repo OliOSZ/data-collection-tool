@@ -22,3 +22,7 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+#Test
+DataSS/backend/.env
+DataSS/backend/node_modules
