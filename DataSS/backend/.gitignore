@@ -1,5 +1,5 @@
-.envNew-Item -Path .env -ItemType File
-
+.env
 
 node_modules/
+
 dist/
