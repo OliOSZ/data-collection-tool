@@ -11,5 +11,6 @@ npm install
 npm install express
 npm install -g nodemon
 npm install express cors pg dotenv
+npm install express pg bcryptjs jsonwebtoken dotenv
 
 DATABASE_URL=postgres://brukernavn:passord@localhost:5432/databasename
