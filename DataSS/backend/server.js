@@ -3,7 +3,9 @@ const express = require("express");
 const bcrypt = require("bcryptjs");
 const { Pool } = require("pg");
 const jwt = require("jsonwebtoken");
+
 const cors = require("cors");
+
 
 const app = express();
 
@@ -52,6 +54,7 @@ app.post("/register", async (req, res) => {
       [name, email, hashedPassword]
     );
 
+
     console.log("User registered successfully:", newUser.rows[0]);
 
     res.status(201).json({ message: "User registered successfully", user: newUser.rows[0] });
@@ -65,6 +68,7 @@ app.post("/register", async (req, res) => {
 app.post("/login", async (req, res) => {
   try {
     const { email, password } = req.body;
+
 
     const user = await pool.query("SELECT * FROM users WHERE email = $1", [email]);
     if (user.rows.length === 0) {
