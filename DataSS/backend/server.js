@@ -89,10 +89,7 @@ app.post("/login", async (req, res) => {
   }
 });
 
-const surveyResults = [
-  { id: 1, question: "Hva er din favorittfarge?", answer: "Blå" },
-  { id: 2, question: "Liker du kaffe?", answer: "Ja" }
-];
+
 
 app.get("/", (req, res) => {
   res.json({ message: "Hello, world" });
