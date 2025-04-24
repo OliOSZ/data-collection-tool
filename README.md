@@ -13,3 +13,6 @@ npm install express
 npm install -g nodemon
 npm install express cors pg dotenv
 npm install express pg bcryptjs jsonwebtoken dotenv
+
+
+# Setup and walk-through
