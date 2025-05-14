@@ -1,5 +1,5 @@
 import express from "express";
-import { createSurvey, getSurveys, getSurveyQuestions, getSurveyResults } from "../controllers/surveyController";
+import { createSurvey, getSurveys, getSurveyQuestions, getSurveyResults } from "../controllers/surveyController.js";
 
 const router = express.Router();
 

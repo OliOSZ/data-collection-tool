@@ -2,9 +2,9 @@ import("dotenv/config");
 import express from "express";
 import cors from "cors";
 
-import authRoutes from "routes/authRoutes";
-import answerRoutes from "./routes/answerRoutes";
-import surveyRoutes from "./routes/surveyRoutes";
+import authRoutes from "./routes/authRoutes.js";
+import answerRoutes from "./routes/answerRoutes.js";
+import surveyRoutes from "./routes/surveyRoutes.js";
 
 const app = express();
 
