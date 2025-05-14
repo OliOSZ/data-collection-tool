@@ -1,6 +1,6 @@
-const pool = require("../config/db");
+import pool from "../config/db";
 
-exports.createSurvey = async (req, res) => {
+export const createSurvey = async (req, res) => {
     try {
         const { title, description, questions } = req.body;
 
@@ -40,7 +40,7 @@ exports.createSurvey = async (req, res) => {
     }
 };
 
-exports.getSurveys = async (req, res) => {
+export const getSurveys = async (req, res) => {
     try {
         const surveys = await pool.query("SELECT * FROM surveys");
 
@@ -55,7 +55,7 @@ exports.getSurveys = async (req, res) => {
     }
 };
 
-exports.getSurveyQuestions = async (req, res) => {
+export const getSurveyQuestions = async (req, res) => {
     try {
         const { survey_id } = req.params;
 
@@ -75,7 +75,7 @@ exports.getSurveyQuestions = async (req, res) => {
     }
 };
 
-exports.getSurveyResults = async (req, res) => {
+export const getSurveyResults = async (req, res) => {
     try {
         const { survey_id } = req.params;
 

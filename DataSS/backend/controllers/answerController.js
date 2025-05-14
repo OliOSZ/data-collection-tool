@@ -1,6 +1,6 @@
-const pool = require("../config/db");
+import pool from "../config/db";
 
-exports.submitAnswer = async (req, res) => {
+export const submitAnswer = async (req, res) => {
     try {
       const { user_id, survey_id, answers } = req.body; 
   

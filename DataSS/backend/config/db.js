@@ -1,5 +1,5 @@
-const { Pool } = require("pg");
-require("dotenv").config();
+import { Pool } from "pg";
+import("dotenv/config");
 
 const pool = new Pool({
   user: process.env.DB_USER,
@@ -21,4 +21,4 @@ const testDbConnection = async () => {
   
   testDbConnection();
 
-module.exports = pool;
+  export default pool;
