@@ -1,9 +1,9 @@
-const pool = require("../config/db");
-const bcrypt = require("bcryptjs");
-const jwt = require("jsonwebtoken");
+import pool from "../config/db.js";
+import bcrypt from "bcryptjs";
+import jwt from "jsonwebtoken";
 
 
-exports.registerUser = async (req, res) => {
+export const registerUser = async (req, res) => {
   try {
     const { name, email, password } = req.body;
 
@@ -29,7 +29,7 @@ exports.registerUser = async (req, res) => {
 };
 
 
-exports.loginUser = async (req, res) => {
+export const loginUser = async (req, res) => {
   try {
     const { email, password } = req.body;
 

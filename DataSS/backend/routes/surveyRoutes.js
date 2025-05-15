@@ -1,5 +1,5 @@
-const express = require("express");
-const { createSurvey, getSurveys, getSurveyQuestions, getSurveyResults } = require("../controllers/surveyController");
+import express from "express";
+import { createSurvey, getSurveys, getSurveyQuestions, getSurveyResults } from "../controllers/surveyController.js";
 
 const router = express.Router();
 
@@ -9,4 +9,4 @@ router.get("/:survey_id/questions", getSurveyQuestions);
 router.get("/:survey_id/results", getSurveyResults);
 
 
-module.exports = router;
+export default router;
