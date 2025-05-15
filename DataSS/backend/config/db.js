@@ -22,8 +22,5 @@ const testDbConnection = async () => {
   
   testDbConnection();
 
-  console.log("🔍 Loaded DB password:", process.env.DB_PASSWORD);
-  console.log("🧪 Type of password:", typeof process.env.DB_PASSWORD);
-
 
   export default pool;
